@@ -1,18 +1,6 @@
 hello sonu
 
 
-=
-=
-=
-=
-=
-=
-=
-==
-=
-=
+This is a new  line.
 
-
-hi hoiw are u
-
-==================================
+scope end.
