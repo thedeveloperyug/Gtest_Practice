@@ -9,8 +9,13 @@ TEST(TestName, Subtest_1){
 }
 
 
-// Passed when comparision is false
+// Failed when comparision is True
 TEST(TestName, Subtest_2){
+    ASSERT_TRUE(1==2);
+}
+
+// Passed when comparision is false
+TEST(TestName, Subtest_3){
     ASSERT_FALSE(1==2);
 }
 
