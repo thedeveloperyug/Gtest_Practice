@@ -1,0 +1,12 @@
+# load("@rules_cc//cc:defs.bzl", "cc_test")
+
+
+cc_test(
+    name = "fib_test",
+    size = "small",
+    srcs = ["fib_test.cc"],
+    deps = [
+       "//fib:fiblib",
+       "@googletest//:gtest_main",
+    ],
+)
