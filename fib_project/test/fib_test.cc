@@ -1,4 +1,4 @@
-#include "fib/fib.h"
+#include "src/fib.h"
 #include <gtest/gtest.h>
 
 TEST(FibTest, HandleCornerCases){

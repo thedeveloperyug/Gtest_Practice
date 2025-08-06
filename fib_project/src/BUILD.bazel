@@ -6,3 +6,11 @@ cc_library(
     hdrs = ["fib.h"],
     visibility = ["//visibility:public"],
 )
+
+
+cc_library(
+    name = "calc",
+    srcs = ["calculator.cc"],
+    hdrs = ["calculator.h"],
+    visibility = ["//visibility:public"],
+)
