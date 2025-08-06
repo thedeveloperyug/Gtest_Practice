@@ -1,0 +1,24 @@
+# load("@rules_cc//cc:defs.bzl", "cc_test")
+
+
+cc_test(
+    name = "fib_test",
+    size = "small",
+    srcs = ["fib_test.cc"],
+    deps = [
+       "//src:fiblib",
+       "@googletest//:gtest_main",
+    ],
+)
+
+
+
+cc_test(
+    name = "calc_test",
+    size = "small",
+    srcs = ["calc_test.cc"],
+    deps = [
+         "//src:calc",
+         "@googletest//:gtest_main",
+    ]
+)

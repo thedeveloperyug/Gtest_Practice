@@ -1,0 +1,16 @@
+# load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "fiblib",
+    srcs = ["fib.cc"],
+    hdrs = ["fib.h"],
+    visibility = ["//visibility:public"],
+)
+
+
+cc_library(
+    name = "calc",
+    srcs = ["calculator.cc"],
+    hdrs = ["calculator.h"],
+    visibility = ["//visibility:public"],
+)
