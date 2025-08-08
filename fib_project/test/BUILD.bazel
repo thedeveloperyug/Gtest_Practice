@@ -22,3 +22,37 @@ cc_test(
          "@googletest//:gtest_main",
     ]
 )
+
+
+cc_test(
+    name = "mock_test",
+    srcs = ["mock_test.cc"],
+    deps = [
+        "//src:mock_lib",
+        "@googletest//:gtest_main",
+    ],
+)
+
+
+
+# cc_library(
+#     name = "mock_test_lib",
+#     srcs = ["mock_test.cc"],
+#     deps = [
+#         "@googletest//:gtest",
+#         "@googletest//:gmock",
+#         "//src:mock_lib", 
+#     ],
+# )
+
+# cc_binary(
+#     name = "mock_test_bin",
+#     srcs = ["test_main.cc"],
+#     deps = [":mock_test_lib"],
+# )
+
+# cc_test(
+#     name = "mock_test",
+#     srcs = ["test_main.cc"],
+#     deps = [":mock_test_lib"],
+# )

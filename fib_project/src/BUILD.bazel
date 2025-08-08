@@ -14,3 +14,10 @@ cc_library(
     hdrs = ["calculator.h"],
     visibility = ["//visibility:public"],
 )
+
+cc_library(
+    name = "mock_lib",
+    srcs = ["mock.cc"],
+    hdrs = ["mock.h", "DataBaseConnect.h"],
+    visibility = ["//visibility:public"],
+)
