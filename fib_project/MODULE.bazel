@@ -1,5 +1,6 @@
-module(name = "fib_project", version = "0.1")
+bazel_dep(name = "googletest", version = "1.14.0")  # Or whatever version you're using
 
-# Declare dependencies
-bazel_dep(name = "googletest", version = "1.14.0")
-bazel_dep(name = "rules_cc", version = "0.0.9")
+local_path_override(
+    module_name = "googletest",
+    path = "/home/bti-001006/googletest",  # Adjust to your actual path
+)

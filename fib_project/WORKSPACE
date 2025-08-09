@@ -1,1 +1,5 @@
-workspace(name = "fib_project")
+
+local_repository(
+    name = "gtest",
+    path = "/home/bti-001006/googletest",
+)
