@@ -1,0 +1,16 @@
+cc_library(
+    name = "bank_server",
+    hdrs = ["BankServer.h"],
+    visibility = ["//visibility:public"],
+)
+
+
+cc_library(
+    name = "atm_machine",
+    srcs = ["AtmMachine.cpp"],
+    hdrs = ["AtmMachine.h"],
+    deps = [":bank_server"],
+    visibility = ["//visibility:public"],
+)
+
+
